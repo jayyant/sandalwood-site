@@ -10,3 +10,4 @@
  - MySQL
  - JS
 
+![alt text](https://github.com/jayyant/sandalwood-site/blob/Main/image.png?raw=true)
