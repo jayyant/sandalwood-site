@@ -1,0 +1,329 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  transition: background-image 0.8s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  image-rendering: crisp-edges;
+  color: #f0f0f0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.955);
+  padding: 30px;
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  background-color: #111;
+  text-align: center;
+  padding: 1em;
+  position: sticky;
+  top: 90px;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* Section containers */
+.container {
+  padding: 60px 20px;
+  min-height: 100vh;
+  transition: background 0.8s;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+
+/* Dynamic backgrounds */
+.bg1 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGETOnelsADrsdHQwCcRdi8LFG6oeOnCyWZw&s'); }
+.bg2 { background-image: url('https://cdn.pixabay.com/photo/2018/06/10/17/39/market-3466906_640.jpg'); }
+.bg3 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT42EqxgN7z0H28bDU7L0SBW2uXQeLmObNfA&s'); }
+.bg4 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqMOW6Pi6uuUgyLdjOB9xWvqHELxBudhwnQ&s'); }
+.bg5 { background-image: url('https://c4.wallpaperflare.com/wallpaper/209/644/840/wood-textures-wood-texture-abstract-textures-hd-art-wallpaper-preview.jpg'); }
+
+/* Founders section */
+#pushpa {
+  width: 250px;
+  height: 250px;
+  border-radius: 25%;
+  margin: 20px;
+  float: left;
+}
+#founderInfo {
+  font-size: 1.2em;
+  text-align: justify;
+  color: #fff;
+}
+
+/* Buttons */
+.detailButton {
+  font-size: 1.2em;
+  padding: 12px 24px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff4500;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.detailButton:hover {
+  background-color: #e63e00;
+  transform: scale(1.05);
+}
+
+/* Form */
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+  backdrop-filter: blur(5px);
+}
+
+/* Selection */
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+#about {
+  padding-top: 100px;
+  font-size: 40px;
+}
+
+#home {
+  padding-top: 100px;
+  font-size: 50px;
+}
+
+/* ---------- Sidenav styles ---------- */
+.sidenav {
+  height: 100%;
+  width: 0; /* Start closed */
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: width 0.4s ease; /* Transition the width */
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #f1f1f1;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+.sidenav a:hover {
+  background-color: #444;
+}
+
+/* Strong override for all states of links */
+.sidenav a:link,
+.sidenav a:visited,
+.sidenav a:hover,
+.sidenav a:active {
+  color: #f1f1f1 !important;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  color: #fff;
+}
+
+/* Overlay for dimming effect */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+  display: none;
+}
+
+/* Open button for the sidebar */
+.openbtn {
+  font-size: 12px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0,0,0,0.6); /* Better contrast */
+  padding: 10px;
+  border: none;
+  margin: 15px;
+  z-index: 3000;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.openbtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Crew Table Styling */
+table.crew-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table.crew-table th, table.crew-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table.crew-table th {
+  background-color: #333;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+table.crew-table tr:nth-child(even) {
+  background-color: #222;
+}
+
+table.crew-table tr:hover {
+  background-color: #444;
+}
+
+table.crew-table td {
+  border-bottom: 1px solid #555;
+}
+
+#logoutButton {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+form input {
+  margin-bottom: 10px;
+  padding: 6px;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Overlay for the form */
+.form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* allow scrolling if content overflows */
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  padding: 40px 20px; /* padding for spacing around the form */
+  box-sizing: border-box;
+}
+
+/* Container for the form */
+.form-container {
+  position: relative;
+  background-color: #fff;
+  color: #000; /* make sure text is black */
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000; /* ensure heading is black */
+}
+
+.form-container label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #000; /* ensure label text is black */
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #000; /* input text color */
+  background-color: #fff; /* input background */
+}
+
+.form-container button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.form-container button[type="button"] {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  opacity: 0.9;
+}
